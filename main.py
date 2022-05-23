@@ -39,3 +39,19 @@ dicts.examples_dictionaries()
 sets.examples_sets()
 tuples.examples_tuples()
 
+from Objects import *
+
+ClassExample.example_class()
+InstanceVariable.example_instance_variable()
+inheritance.example_inheritance()
+Properties.example_private_properties()
+Types.example_type()
+
+from Modules import *
+
+CrawlerExample.example_crawler()
+ModuleExample.example_modules()
+Generators.example_generator()
+
+from Exceptions import *
+ 

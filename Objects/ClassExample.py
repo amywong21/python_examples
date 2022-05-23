@@ -1,6 +1,3 @@
-from curses import ACS_GEQUAL
-
-
 def example_class():
 	# Create a class named MyClass, with a property named x.
 	class MyClass:
@@ -37,7 +34,7 @@ def example_class():
 			self.name = age
 
 		def myfunc(self):
-			print("Hello my name is " + self.name)
+			print("Hello my name is " + str(self.name))
 	
 	p1 = Person("John", 36)
 	p1.myfunc()
@@ -55,16 +52,17 @@ def example_class():
 
 	monika = student("Monika", "Müller")
 	monika.name()
-	class student():
+
+	class Student():
 		def __init__(self, firstname, lastname):
 			self.firstname = firstname
 			self.lastname = lastname
 			self.term = 1
 
 		def name(self):
-			print(self.firstname + " " + self.lastname + " (Semester: " + str(self.term) + ")"))
-
-	erik = student("Erik", "Mustermann")
+			print(self.firstname + " " + self.lastname + "Semester: " + str(self.term))
+	
+	erik = Student("Erik", "Mustermann")
 	erik.name()
 
 	monika = Student("Monika", "Müller")
@@ -90,7 +88,7 @@ def example_class():
 	p1.age = 40
 
 	# Delete object properties
-	def p1.age
+	del p1.age
 
 	# Delete objects
 	del p1
@@ -151,13 +149,4 @@ def example_class():
 		v.name()
 
 	name_5x(monika)
-	name_5x(c)	
-
-
-
-
-
-
-
-
-
+	name_5x(c)

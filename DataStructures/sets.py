@@ -71,7 +71,3 @@ def examples_sets():
 	y = set({3,4,5,6,7})
 	z = x.symmetric_difference(y)
 	print(z)
-
-
-
-

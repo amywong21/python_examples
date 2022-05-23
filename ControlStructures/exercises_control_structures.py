@@ -3,7 +3,7 @@ print("1.) Gib nacheinander alle Kontinente aus der Liste continents aus.")
 continents = ["Afrika", "Antarktis", "Asien", "Australien und Ozeanien", "Europa", "Nordamerika", "Südamerika"]
 
 for i in continents:
-    print(i)
+	print(i)
 
 # 2.) Gib aus der Liste continents nur die bewohnten Kontinente aus.
 print("2.) Gib aus der Liste continents nur die bewohnten Kontinente aus.")
@@ -56,13 +56,13 @@ price = 50
 new_price = 50
 
 if price > 0 and price <= 20:
-    new_price = price * 0.8
+	new_price = price * 0.8
 elif price > 20 and price <= 50:
-    new_price = price * 0.6
+	new_price = price * 0.6
 elif price > 50:
-    new_price = price * 0.4
+	new_price = price * 0.4
 else:
-    print("Du hast eine negative Zahl eingegeben")
+	print("Du hast eine negative Zahl eingegeben")
 
 print(new_price)
 
@@ -75,19 +75,19 @@ new_prices =[]
 new_price = 50
 
 for price in prices:
-    if price > 0 and price <= 20:
-        new_price = price * 0.8
-        #new_prices.append(new_price) entweder in jedem case oder danach einmal
-    elif price > 20 and price <= 50:
-        new_price = price * 0.6
-        #new_prices.append(new_price)
-    elif price > 50:
-        new_price = price * 0.4
-        #new_prices.append(new_price)
-    else:
-        print("Du hast eine negative Zahl eingegeben")
-    new_prices.append(new_price)      
-    
+	if price > 0 and price <= 20:
+		new_price = price * 0.8
+		#new_prices.append(new_price) entweder in jedem case oder danach einmal
+	elif price > 20 and price <= 50:
+		new_price = price * 0.6
+		#new_prices.append(new_price)
+	elif price > 50:
+		new_price = price * 0.4
+		#new_prices.append(new_price)
+	else:
+		print("Du hast eine negative Zahl eingegeben")
+	new_prices.append(new_price)      
+	
 print(new_prices)
 
 # 7.)Gehe die Elemente in der Liste *chaos* durch. Bei einem neuen Preis 
@@ -105,20 +105,20 @@ chaos =["old price: 40", "new price: 21", "old price: 29", "old price: 50", "new
 order = []
 
 for price_string in chaos:
-    if "new" in price_string:
-        new_price = int(price_string.split(":")[1])
-        order.append(new_price)
-    elif "old" in price_string:
-        old_price = int(price_string.split(":")[1]) 
-        if old_price > 0 and old_price <= 20:
-            new_price = old_price * 0.8
-            #new_prices.append(new_price) entweder in jedem case oder danach einmal
-        elif old_price > 20 and price <= 50:
-            new_price = old_price * 0.6
-            #new_prices.append(new_price)
-        elif old_price > 50:
-            new_price = old_price * 0.4
-            #new_prices.append(new_price)
-        order.append(new_price)      
+	if "new" in price_string:
+		new_price = int(price_string.split(":")[1])
+		order.append(new_price)
+	elif "old" in price_string:
+		old_price = int(price_string.split(":")[1]) 
+		if old_price > 0 and old_price <= 20:
+			new_price = old_price * 0.8
+			#new_prices.append(new_price) entweder in jedem case oder danach einmal
+		elif old_price > 20 and price <= 50:
+			new_price = old_price * 0.6
+			#new_prices.append(new_price)
+		elif old_price > 50:
+			new_price = old_price * 0.4
+			#new_prices.append(new_price)
+		order.append(new_price)      
 
 print(order)
