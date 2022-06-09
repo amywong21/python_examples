@@ -38,6 +38,7 @@ lists.examples_lists()
 dicts.examples_dictionaries()
 sets.examples_sets()
 tuples.examples_tuples()
+queue.example_queue()
 
 from Objects import *
 
@@ -54,4 +55,9 @@ ModuleExample.example_modules()
 Generators.example_generator()
 
 from Exceptions import *
+
+exception.example_exceptions()
+
+
+
  

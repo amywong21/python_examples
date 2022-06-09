@@ -1,5 +1,6 @@
- 
-x = set({1,2,3,4,5})
-y = set({3,4,5,6,7})
-z = x.union(y)
-print(z)
+def adjective_to_verb(sentence, index):
+	verb = sentence.split(" ")[index]
+
+	if verb[-1] == ".":
+		verb = verb[:-1]
+	return verb + "en"

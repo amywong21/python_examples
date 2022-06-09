@@ -1,1 +1,1 @@
-__all__ = ["ExceptionsExample"]
+__all__ = ["exception"]

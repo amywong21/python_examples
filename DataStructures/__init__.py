@@ -1,1 +1,1 @@
-__all__ = ["lists", "tuples", "dicts", "sets"]
+__all__ = ["ExercisesQueue", "lists", "queue", "tuples", "dicts", "sets"]

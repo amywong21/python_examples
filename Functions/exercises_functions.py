@@ -7,12 +7,12 @@ generaltaxfactor = 1
 foodtaxfactor = 1
 
 def list_sum(price_list, factor):
-    sum_of_list = 0
-    for price in price_list:
-        sum_of_list = price * factor + sum_of_list
-        
-    print(sum_of_list)
-    
+	sum_of_list = 0
+	for price in price_list:
+		sum_of_list = price * factor + sum_of_list
+		
+	print(sum_of_list)
+	
 list_sum(cart_prices, generaltaxfactor)
 list_sum(foodprices, foodtaxfactor)
 list_sum(foodprices)
@@ -27,19 +27,19 @@ list_sum()
 
 # Du wunderst dich nur kurz über die Ansprüche der Mathemagierin.
 def prices_list(name, price):
-    list_of_prices = []
-    
-    for i in range(10):
-        # calculate parts
-        factor = i + 1
-        factored_price = factor * price
-        # concatenate string from parts
-        article_price_string = str(factor) + " x " + name + ": " + str(factored_price)
-        # alternative ohne factored_price
-        #article_price_string = str(factor) + " x " + name + ": " + str(factor * price)
-        list_of_prices.append(article_price_string)
-        
-    return list_of_prices
+	list_of_prices = []
+	
+	for i in range(10):
+		# calculate parts
+		factor = i + 1
+		factored_price = factor * price
+		# concatenate string from parts
+		article_price_string = str(factor) + " x " + name + ": " + str(factored_price)
+		# alternative ohne factored_price
+		#article_price_string = str(factor) + " x " + name + ": " + str(factor * price)
+		list_of_prices.append(article_price_string)
+		
+	return list_of_prices
 
 
 print(prices_list("Wunderkeks", 0.79))
@@ -52,10 +52,10 @@ print(prices_list("Wunderkeks", 0.79))
 shelf = ["Zaubersäge", "leer", "Wunderkekse", "Trickarten", "leer"]
 
 def add_to_shelf(article):
-    # hier kommt dein Code hin. 
-    # Du darfst von innerhalb der Funktion direkt auf die Variable "shelf"
-    # zugreifen, diese muss nicht als Parameter übergeben werden, da sie
-    # schon außerhalb der Funktion existiert.
+	# hier kommt dein Code hin. 
+	# Du darfst von innerhalb der Funktion direkt auf die Variable "shelf"
+	# zugreifen, diese muss nicht als Parameter übergeben werden, da sie
+	# schon außerhalb der Funktion existiert.
 
 	# ohne leere Regalplätze zu beachten:
 	shelf.insert(0, article)
