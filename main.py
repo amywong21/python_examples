@@ -58,6 +58,8 @@ from Exceptions import *
 
 exception.example_exceptions()
 
+from Sort import *
 
+sort_exercises.example_sort_all()
 
  
