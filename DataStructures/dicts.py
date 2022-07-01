@@ -1,4 +1,10 @@
 def examples_dictionaries():
+	examples_dictionaries_01()
+	examples_dictionaries_02()
+	examples_dictionaries_03()
+	examples_dictionaries_04()
+
+def examples_dictionaries_01():
 	# Creating an empty dict
 	print("Creating an empty dict")
 	directions = {}
@@ -125,4 +131,57 @@ def examples_dictionaries():
 	del directions
 	# throws an UnboundLocalError, since directions is deleted before
 	#print(directions)
-	
+
+# Default dicts
+from collections import defaultdict
+
+def generateDefaultValue():
+	print("generateDefaultValue() wurde aufgerufen!")
+	return 0
+
+def examples_dictionaries_02():
+	d = defaultdict(generateDefaultValue)
+	print(d)
+	d["existiertNicht23432535"]
+	print(d)
+	d["existiertNicht23432535"] = 1
+	print(d)
+
+	d = defaultdict(generateDefaultValue)
+	print(d)
+	d["existiertNicht"] = d["existiertNicht"] + 5
+	print(d)
+
+def examples_dictionaries_03():
+	# int() ist eine Methode die die default Ganzzahl 0 liefert
+	n = int()
+	print(n)
+
+	p = defaultdict(int)
+	print(p)
+	words = ["Hallo", "Hallo", "Welt"]
+
+	for word in words:
+		p[word] = p[word] + 1
+		print(p)
+
+# Macht das gleiche wie examples_dictionaries_03, nur klassischer
+def examples_dictionaries_04():
+	# Leeres Dictionary
+	p = {}
+	print(p)
+	words = ["Hallo", "Hallo", "Welt"]
+
+	for word in words:
+		if word in p:
+			# Ohne defaultdict gibt der Zugriff p[word] einen KeyError, 
+			# da es diesen Key noch nicht gibt
+			p[word] = p[word] + 1
+		else:
+			p[word] = 1
+		print(p)
+
+#examples_dictionaries_01()
+#examples_dictionaries_02()
+#examples_dictionaries_03()
+#examples_dictionaries_04()

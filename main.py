@@ -1,5 +1,4 @@
 from ControlStructures import *
-
 print("Start main.py")
 ifelse.example_boolean()
 ifelse.example_if_else()
@@ -11,7 +10,7 @@ forloop.example_for_loop()
 trumpbot.example_randint()
 
 from Functions import *
-
+input.example_input_all()
 function.example_functions()
 function.example_function_parameters()
 function.example_function_as_parameter()
@@ -33,7 +32,6 @@ fileorw.example_write_file()
 csv.example_csv()
 
 from DataStructures import *
-
 lists.examples_lists()
 dicts.examples_dictionaries()
 sets.examples_sets()
@@ -41,7 +39,6 @@ tuples.examples_tuples()
 queue.example_queue()
 
 from Objects import *
-
 ClassExample.example_class()
 InstanceVariable.example_instance_variable()
 inheritance.example_inheritance()
@@ -49,17 +46,20 @@ Properties.example_private_properties()
 Types.example_type()
 
 from Modules import *
-
 CrawlerExample.example_crawler()
 ModuleExample.example_modules()
 Generators.example_generator()
 
 from Exceptions import *
-
 exception.example_exceptions()
 
 from Sort import *
-
 sort_exercises.example_sort_all()
+
+from Date_time import *
+date_time.example_datetime_all()
+
+from String import *
+string_exercises.example_string_all()
 
  

@@ -1,1 +1,1 @@
-__all__ = ["function", "withopenfx", "csv", "fileorw"]
+__all__ = ["function", "withopenfx", "csv", "fileorw", "input"]
